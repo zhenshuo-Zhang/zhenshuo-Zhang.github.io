@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zhenshuo Zhang is a student at Harbin Institute of Technology with an interest in computer vision.">
+  <title>Zhenshuo Zhang | Academic homepage</title>
+  <style>
+    :root { color-scheme: light; --paper: #f8f7f2; --ink: #222b29; --muted: #5a6864; --line: #d7ded8; --accent: #2b6253; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif; font-size: 16px; line-height: 1.65; }
+    a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    a:active { opacity: .7; }
+    .skip { position: absolute; top: -5rem; left: 1rem; background: var(--ink); color: white; padding: .5rem 1rem; z-index: 5; }
+    .skip:focus { top: 1rem; }
+    .wrap { width: min(100% - 3rem, 1040px); margin: 0 auto; }
+    header { border-bottom: 1px solid var(--line); }
+    .header-inner { min-height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { font-weight: 650; text-decoration: none; letter-spacing: .01em; }
+    .header-note { font-size: .78rem; letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+    .hero { display: grid; grid-template-columns: 1fr 260px; gap: 4rem; padding: 102px 0 95px; align-items: end; }
+    .eyebrow, .section-label { color: var(--accent); font-size: .74rem; text-transform: uppercase; letter-spacing: .15em; font-weight: 700; }
+    h1 { font-family: Georgia, "Songti SC", serif; font-size: clamp(3rem, 6.5vw, 5.6rem); font-weight: 400; letter-spacing: -.035em; line-height: 1.02; margin: 22px 0 13px; }
+    .chinese-name { color: var(--muted); font-size: 1.12rem; letter-spacing: .08em; margin: 0; }
+    .intro { max-width: 580px; font-size: clamp(1.13rem, 2vw, 1.32rem); line-height: 1.6; margin: 37px 0 0; }
+    .hero-aside { border-top: 1px solid var(--ink); padding-top: 17px; color: var(--muted); font-size: .88rem; }
+    .hero-aside strong { display: block; color: var(--ink); font-size: 1rem; margin-top: 6px; font-weight: 600; }
+    .hero-aside p { margin: 0; }
+    .section { display: grid; grid-template-columns: 220px 1fr; gap: 3rem; border-top: 1px solid var(--line); padding: 42px 0 48px; }
+    .section-label { margin: .3rem 0 0; }
+    .section h2 { font-family: Georgia, "Songti SC", serif; font-weight: 400; font-size: 2rem; line-height: 1.2; margin: 0 0 1rem; }
+    .section p { margin: 0; }
+    .education-list { list-style: none; margin: 0; padding: 0; }
+    .education-list li { display: grid; grid-template-columns: 1fr auto; gap: 1rem; padding: 19px 0; border-bottom: 1px solid var(--line); align-items: baseline; }
+    .education-list li:first-child { padding-top: 0; }
+    .education-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+    .school { font-weight: 600; }
+    .date { color: var(--muted); font-size: .88rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .email { color: var(--accent); overflow-wrap: anywhere; }
+    footer { border-top: 1px solid var(--line); padding: 27px 0 38px; color: var(--muted); font-size: .83rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 1rem; }
+    @media (hover: hover) { a:hover { color: var(--accent); } }
+    @media (max-width: 680px) {
+      .wrap { width: min(100% - 2.5rem, 1040px); }
+      .header-inner { min-height: 68px; }
+      .header-note { font-size: .65rem; }
+      .hero { grid-template-columns: 1fr; gap: 40px; padding: 72px 0 62px; }
+      .hero-aside { max-width: 260px; }
+      .section { grid-template-columns: 1fr; gap: 22px; padding: 32px 0 38px; }
+      .education-list li { grid-template-columns: 1fr; gap: 2px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main-content">Skip to content</a>
+  <header><div class="wrap header-inner"><a class="brand" href="#top">Zhenshuo Zhang</a><span class="header-note">Academic homepage</span></div></header>
+  <main id="main-content" class="wrap">
+    <section class="hero" id="top" aria-labelledby="name">
+      <div>
+        <div class="eyebrow">Harbin, China</div>
+        <h1 id="name">Zhenshuo Zhang</h1>
+        <p class="chinese-name" lang="zh-Hans">张振硕</p>
+        <p class="intro">I am a student at Harbin Institute of Technology, interested in computer vision.</p>
+      </div>
+      <div class="hero-aside"><p>Research interest<strong>Computer vision</strong></p></div>
+    </section>
+    <section class="section" aria-labelledby="education-heading">
+      <p class="section-label">01 / Education</p>
+      <div>
+        <h2 id="education-heading">Education</h2>
+        <ul class="education-list">
+          <li><span class="school">Harbin Institute of Technology</span><span class="date">2024 – Present</span></li>
+          <li><span class="school">Jiangxi Agricultural University</span><span class="date">2020 – 2024</span></li>
+        </ul>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="contact-heading">
+      <p class="section-label">02 / Contact</p>
+      <div><h2 id="contact-heading">Get in touch</h2><p><a class="email" href="mailto:2569256369@qq.com">2569256369@qq.com</a></p></div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>© Zhenshuo Zhang</span><a href="https://github.com/zhenshuo-Zhang">GitHub profile ↗</a></div></footer>
+</body>
+</html>
